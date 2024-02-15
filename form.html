@@ -3,13 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embed Google Form</title>
+    <title>Elective Selection Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h2>My Google Form</h2>
-<!-- Embed Google Form -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNMxbEg4p_cvXYmvNG8lrJ63bnfdZbKVVjh7BQaDVKtj-rEQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
+<div class="container">
+    <header>
+        <h1>Open Elective Selection</h1>
+        <p>Welcome! Please fill out the form below to select your preferred open elective subjects.</p>
+    </header>
+    <section class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdaVLyFpUcCC890Cd_sSRNE3q6pFW8BYj-w7ZTHhCYlwqjp2g/viewform?embedded=true" width="640" height="980" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
+</div>
 </body>
+<style>
+    body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    margin: auto;
+    width: 100%;
+    max-width: 640px;
+}
+
+.form-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .form-container iframe {
+        height: 1200px;
+    }
+}
+
+</style>
 </html>
