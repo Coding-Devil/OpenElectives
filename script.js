@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     .then(data => {
         console.log('Success:', data);
         // Redirect to Google Form
-        window.location.href = 'form.html';
+        window.location.href = 'https://forms.gle/96R3UuG6wHgNhuX3A';
     })
     .catch((error) => {
         console.error('Error:', error);
