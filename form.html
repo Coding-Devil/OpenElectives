@@ -18,56 +18,25 @@
 </div>
 </body>
 <style>
-    body, html {
-    margin: 0;
-    padding: 0;
+   .form-container iframe {
     width: 100%;
-    height: 100%;
-    font-family: 'Arial', sans-serif;
-    background: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 800px;
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #666;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.form-container {
-    margin: auto;
-    width: 100%;
-    max-width: 640px;
-}
-
-.form-container iframe {
-    width: 100%;
+    height: 75vh; /* Adjust based on your preference */
     border: none;
     border-radius: 8px;
     overflow: hidden;
 }
 
+/* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     .form-container iframe {
-        height: 1200px;
+        height: 85vh; /* Increase the height for smaller devices if needed */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .form-container iframe {
+        height: 95vh; /* Adapt for very small screens */
     }
 }
 
