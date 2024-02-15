@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Elective Selection Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Open Elective Selection Login</h2>
+        <p>Please enter your details to proceed to the open elective selection form.</p>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="usn">USN</label>
+                <input type="text" id="usn" name="usn" pattern="1RN21CD\d{3}" title="USN should be in the format 1RN21CDxxx." required>
+            </div>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
